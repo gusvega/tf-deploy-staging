@@ -1,0 +1,16 @@
+name: "Deploy to Staging"
+description: "Deploy infra to Staging environment (containerized Terraform)."
+author: "gusvega"
+branding:
+  icon: "play-circle"
+  color: "purple"
+
+inputs:
+  workdir:
+    description: "Working directory"
+    required: false
+    default: "."
+
+runs:
+  using: "docker"
+  image: "Dockerfile"
